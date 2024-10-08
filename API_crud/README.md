@@ -13,17 +13,22 @@ Step 1: Create a Project Directory
         cd courses-api
         
 Step 2:  Initialize the Project
+        
          npm init -y
 
 Step 3: Install Express
+
        npm install express
        
 Step 4: Create the API Server
+
         touch index.js
         
 copy the code from here and start the server
 
-The API will run on http://localhost:3000 
+The API will run on
+
+        http://localhost:3000 
 
 This API allows you to manage a list of courses with basic CRUD operations.
 
