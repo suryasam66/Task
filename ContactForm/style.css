@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2e2e2e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/*------------------------------------*/
+nav {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    height: 56px;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 5px rgba(31, 31, 31, 0.5);
+  }
+
+  .logo {
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .logo h3::first-letter{
+    color: rgb(71, 102, 255);
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    font-size: 14px;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  .menu a:hover{
+    color: rgb(0, 42, 255);
+       background-color: #707070;
+       height: 30px;
+       border-radius: 5px;
+  }
+
+  .hamburger{
+    display: none;
+    font-size: 2rem;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  #toggle{
+        display: none;
+  }
+  .content h1{
+    margin-top: 25%;
+    margin-left: 40%;
+    color: rgb(0, 0, 0);
+  }
+/*---------------------------------------------------*/
+.container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 8px;
+    height: 570px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 5px rgba(31, 31, 31, 0.5);
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.required {
+    color: red;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: white;
+}
+
+textarea {
+    height: 60px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+
+
+.submit-btn {
+    background-color:  rgb(5, 46, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(71, 102, 255);
+}
+
+.privacy-text {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.privacy-text a {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+@media (max-width: 906px){
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 95%;
+        background-color: #333;
+        text-align: center;
+       border-radius: 10px;
+       margin-top: 10px;
+       margin-left: 10px;
+       
+    }
+    
+    .menu li {
+        padding: 15px 0;
+        
+    }
+
+   #toggle:checked + .hamburger + .menu{
+    display: flex;
+   }
+   .hamburger{
+    
+    margin-right: 25px;
+    display: block;
+   }
+    .container {
+        margin-top: 6%;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 95%;
+        background-color: #333;
+        text-align: center;
+       border-radius: 10px;
+       margin-top: 10px;
+       margin-left: 10px;
+       
+    }
+    
+    .menu li {
+        padding: 15px 0;
+        
+    }
+
+   #toggle:checked + .hamburger + .menu{
+    display: flex;
+   }
+   .hamburger{
+    
+    margin-right: 25px;
+    display: block;
+   }
+
+   .content h1{
+    
+    margin-top: 80%;
+    margin-left: 15%;
+  }
+    
+
+    .container {
+        margin-top: 7%;
+        max-width: 97%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    p{
+        font-size: 12px;
+    }
+
+    .container {
+        height: 560px;
+        width: 95%;
+        padding: 20px;
+        margin-top: 2%;
+    }
+    #message{
+        height: 70px; 
+        
+    }
+   .privacy-text{
+    font-size: 14px;
+    margin-top: 1%;
+   }
+}
+
+
+
+
+ 
+   
+  

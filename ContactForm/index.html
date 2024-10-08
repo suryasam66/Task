@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><h3>NAGA ED.</h3></div>
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="hamburger">&#9776;</label>
+        <ul class="menu">
+          <li><a href="">DIGITAL CLASS</a></li>
+          <li><a href="">TRAINING FOR EDUCATORS</a></li>
+          <li><a href="">FREE RESOURCES</a></li>
+          <li><a href="">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+
+    <div class="container">
+        <h1>LEAVE US YOUR INFO</h1>
+        <p>Our team of experts can help answer any questions you might have. Please fill out the form below and a consultant will respond shortly.</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First name">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+            </div>
+
+           
+
+            <button type="submit" class="submit-btn">Submit</button>
+            
+        </form>
+ <br>
+        <p class="privacy-text">
+            NagaEd needs the contact information you provide to contact you about our products and services. For more information, please review our <a href="#">Privacy Policy</a>.
+        </p>
+        <br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
